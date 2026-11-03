@@ -1,0 +1,19 @@
+#ifndef RUN_CAMERA_PAN_H
+#define RUN_CAMERA_PAN_H
+
+typedef enum {
+    CAMERA_PAN_LEFT_POSITION,
+    CAMERA_PAN_RIGHT_POSITION,
+    CAMERA_PAN_FORWARD_POSITION,
+    CAMERA_PAN_LEFT_FORWARD_POSITION,
+    CAMERA_PAN_RIGHT_FORWARD_POSITION
+} CameraPanState;
+
+typedef enum {
+    CAMERA_PAN_PIVOT_RIGHT,
+    CAMERA_PAN_PIVOT_LEFT
+} CameraPanCommand;
+
+void run_camera_pan(void);
+
+#endif
